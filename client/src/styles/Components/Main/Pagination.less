@@ -1,0 +1,73 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.divPagination{
+    display: flex;
+    .informacionNumeroPaginas{
+        display: flex;
+        align-items: center;
+        padding: 0px 15px 0px 0px;
+        @media @phone{
+            font-size: 13pt;
+            height: 30px;
+        }
+        @media @Tablet{
+            font-size: 11pt;
+            height: 25px;
+        }
+        p{
+            margin-left: 7px;
+            color:#E8EAE6;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px black;
+        }
+        input{
+            .WidthHeigth(40px, 23px);
+            outline: none;
+            text-align: center;
+            color: #D1D1D1;
+            border: 1px #1c1c1c solid;
+            background: #414141;
+            border-radius: 5px;
+            @media @phone{
+                font-size: 12pt;
+                height: 30px;
+            }
+            @media @Tablet{
+                font-size: 10.3pt;
+                height: 25px;
+            }
+            &:focus{
+                background: #1c1c1c;
+            }
+        }
+    }
+    .inputsPagination{
+        border: 1px #1c1c1c solid;
+        background: #414141;
+        color:#E8EAE6;
+        padding: 0px 8px;
+        cursor: pointer;
+        @media @phone{
+            font-size: 12pt;
+            height: 30px;
+        }
+        @media @Tablet{
+            font-size: 10.3pt;
+            height: 25px;
+        }
+        font-weight: 500;
+        &:hover{
+            background: #1c1c1c;
+        }
+    }
+    .inputsPagination:nth-child(2){
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .inputsPagination:nth-child(3){
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+      

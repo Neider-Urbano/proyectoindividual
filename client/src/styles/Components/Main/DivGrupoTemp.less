@@ -1,0 +1,20 @@
+@import "../../globales/mixings.less";
+    .divTemp{
+        display: flex;
+        border: 0.1px #4e4e4e solid;
+        border-radius: 5px;
+        padding: 3px 10px;
+        background:#191919;
+        p:nth-child(1){        
+            word-break:break-all;
+        }
+        .pCancelarTemp{
+            .Textos(#DDDDDD, 11.9pt, 200);
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                font-weight: 400;
+            }
+        }
+    }
+    

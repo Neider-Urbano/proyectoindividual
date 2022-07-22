@@ -1,0 +1,31 @@
+@import "../../globales/mixings.less";
+
+.divInputBusqueda{
+        display: flex;
+        justify-content:center;
+        .Border(0.5px, #9D9D9D, 3px);
+        height: 30px;
+        .inputBuscarRaza{
+            outline: none;
+            border: none;           
+            background: #E8EAE6;
+            padding: 5px 8px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            .Textos(#555555, 12.6pt,none);
+            .WidthHeigth(100%,100%);
+        }
+        div{
+            background: #E8EAE6;
+            height: 100%;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 0px 8px 0px 0px;
+            .flex();
+            cursor:pointer;
+            img{
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }

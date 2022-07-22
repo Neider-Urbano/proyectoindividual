@@ -1,0 +1,82 @@
+.divPagination {
+  display: flex;
+}
+.divPagination .informacionNumeroPaginas {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px 0px 0px;
+}
+@media (min-width: 500px) {
+  .divPagination .informacionNumeroPaginas {
+    font-size: 13pt;
+    height: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .divPagination .informacionNumeroPaginas {
+    font-size: 11pt;
+    height: 25px;
+  }
+}
+.divPagination .informacionNumeroPaginas p {
+  margin-left: 7px;
+  color: #E8EAE6;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black;
+}
+.divPagination .informacionNumeroPaginas input {
+  width: 40px;
+  height: 23px;
+  outline: none;
+  text-align: center;
+  color: #D1D1D1;
+  border: 1px #1c1c1c solid;
+  background: #414141;
+  border-radius: 5px;
+}
+@media (min-width: 500px) {
+  .divPagination .informacionNumeroPaginas input {
+    font-size: 12pt;
+    height: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .divPagination .informacionNumeroPaginas input {
+    font-size: 10.3pt;
+    height: 25px;
+  }
+}
+.divPagination .informacionNumeroPaginas input:focus {
+  background: #1c1c1c;
+}
+.divPagination .inputsPagination {
+  border: 1px #1c1c1c solid;
+  background: #414141;
+  color: #E8EAE6;
+  padding: 0px 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+@media (min-width: 500px) {
+  .divPagination .inputsPagination {
+    font-size: 12pt;
+    height: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .divPagination .inputsPagination {
+    font-size: 10.3pt;
+    height: 25px;
+  }
+}
+.divPagination .inputsPagination:hover {
+  background: #1c1c1c;
+}
+.divPagination .inputsPagination:nth-child(2) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.divPagination .inputsPagination:nth-child(3) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

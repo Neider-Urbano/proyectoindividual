@@ -1,0 +1,58 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+
+.divMainRazas{
+    background-image: url("../../../images/fondos/principal.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    @media @phone{
+        position: absolute;
+        top: 10.5vh;
+        .WidthHeigth(100%, 100%);
+        max-height: 585px;
+        overflow-y: auto;
+        padding: 30px 30px;
+    }
+    @media @Tablet{
+        max-height: 585px;
+        .WidthHeigth(100%, 100%);
+        position: relative;
+        top: 0;
+        padding: 30px 180px;
+    }
+    @media @Pc{
+        max-height: 100%;
+    }
+    .divOpcionesFiltrarOrdenar{
+        display: grid;
+        @media @phone{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 13px;
+        }
+        @media @Tablet{
+            height: 31px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 0px;
+        }
+    }
+    .divRazas{
+        padding: 25px 0px;
+        @media @phone{
+            .grid(1);
+            grid-gap: 20px;
+        }
+        @media @Tablet{
+            height: 89%;
+            .grid(4);
+        }
+    }
+    .divPagination{
+        .WidthHeigth(100%, 6%);
+        .flex(row, center, center);
+    }
+}

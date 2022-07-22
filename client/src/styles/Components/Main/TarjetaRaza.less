@@ -1,0 +1,89 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.divTarjetaRaza{
+    .tarjeta{
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 1s ease;
+        @media @phone{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .adelante, .atras{
+            @media @phone{
+                .WidthHeigth(75%, 300px);
+                background: rgba(39, 39, 39,0.95);
+                backface-visibility: hidden;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            @media @Tablet{
+                .WidthHeigth(100%, 200px);
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+        }        
+        .adelante{
+            border: 1px #1e1b1b solid;
+            img{
+                .WidthHeigth(100%; 100%);
+                object-fit:cover;
+            }
+            .divNameRaza{
+                @media @phone{
+                    text-shadow: 1px 1px 2px black;
+                    .flex(row);
+                    .Textos(#fafafa,14pt,500);
+                    line-height: 16px;
+                    height: 70px;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 0px 5px;
+                    letter-spacing: 0.5px;
+                    right: 0;
+                    left:0;
+                }
+                
+                @media @Tablet{
+                    .Textos(#fafafa,12.5pt,500);
+                    height: 55px;
+                }
+            }
+        }
+        .atras{
+            position: absolute;
+            padding: 20px;
+            transform: rotateY(180deg);
+            background: rgba(233, 168, 55,1);
+            border: 0.5px rgb(161, 105, 9) solid;
+            .flex();
+            .pDetalles{
+                text-align: center;
+                .Textos(#212121,12.3pt,500);
+                margin-bottom: 6px;
+            }
+            div{
+                p{
+                    color: #212121;
+                    font-size: 11.5pt;
+                }
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .tarjeta-wrap:hover .tarjeta{
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+
+
+

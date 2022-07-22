@@ -1,0 +1,81 @@
+.bodyAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background: rgba(28, 28, 28, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyAlert .divAlert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyAlert .divAlert .divImgAlerta {
+  border: 1px #212121 solid;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: -35px;
+  z-index: 3;
+  text-align: center;
+}
+.bodyAlert .divAlert .divImgAlerta img {
+  width: 90%;
+  object-fit: cover;
+}
+.bodyAlert .divAlert .divInformacionAlert {
+  padding: 50px 20px 40px 20px;
+  background: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px #212121 solid;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyAlert .divAlert .divInformacionAlert h1 {
+  color: #252121;
+}
+.bodyAlert .divAlert .divInformacionAlert .pDetalleAlert {
+  width: 230px;
+}
+.bodyAlert .divAlert .divInformacionAlert .divOpcionesAlert {
+  width: 100%;
+  margin-top: 20px;
+}
+.bodyAlert .divAlert .divInformacionAlert .divOpcionesAlert button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.bodyAlert .divAlert .divInformacionAlert .divOpcionesAlert .buttonVolver {
+  margin-left: 10px;
+}
+.bodyAlert .divAlert .divInformacionAlert .divCerrarAlerta {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+.bodyAlert .divAlert .divInformacionAlert .divCerrarAlerta p {
+  font-weight: 500;
+}
+.bodyAlert .divAlert .divInformacionAlert .divCerrarAlerta p:hover {
+  font-weight: 700;
+}
+.bodyAlert .backgroundError {
+  background: #c01a27;
+}
+.bodyAlert .backgroundExito {
+  background: #059205;
+}
+.bodyAlert .backgroundInformacion {
+  background: #c6b906;
+}

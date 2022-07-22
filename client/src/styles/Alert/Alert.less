@@ -1,0 +1,86 @@
+@import "../globales/mixings.less";
+@import "../globales/variables.less";
+
+.bodyAlert{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    z-index: 3;
+    background: rgba(28, 28, 28, 0.5);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    .divAlert{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        .divImgAlerta{
+            border: 1px #212121 solid;
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-bottom: -35px;
+            z-index: 3;
+            text-align:center;
+            img{
+                width: 90%;
+                object-fit: cover;
+            }
+        }
+        .divInformacionAlert{
+            padding: 50px 20px 40px 20px;
+            background: #fafafa;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 1px #212121 solid;
+            border-radius: 5px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            h1{
+                color: #252121;
+            }
+            .pDetalleAlert{
+                width: 230px;
+            }
+            .divOpcionesAlert{
+                width: 100%;
+                margin-top: 20px;
+                button{
+                    padding: 4px 8px;
+                    cursor: pointer;
+                }
+                .buttonOk{
+                }
+                .buttonVolver{
+                    margin-left: 10px;
+                }
+            }
+            .divCerrarAlerta{
+                position: absolute;
+                top:15px;
+                right: 20px;
+                cursor: pointer;
+                p{
+                    font-weight: 500;
+                    &:hover{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .backgroundError{
+        background: rgb(192, 26, 39);
+    }
+    .backgroundExito{
+        background: rgb(5, 146, 5);
+    }
+    .backgroundInformacion{
+        background: rgb(198, 185, 6);
+    }
+}

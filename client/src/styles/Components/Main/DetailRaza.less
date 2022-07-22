@@ -1,0 +1,85 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.divDetailRaza {
+  background-image: url("../../../images/fondos/detalleRaza.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: right;
+  .flex(column, center, none);
+  @media @phone{
+    position: absolute;
+    top: 10.5vh;
+    .WidthHeigth(100%, 100%);
+    max-height: 585px;
+    overflow-y: auto;
+    padding: 30px 30px;
+  }
+  @media @Tablet{
+      max-height: none;
+      .WidthHeigth(100%, 100%);
+      position: relative;
+      top: 0;
+      padding: 30px 180px;
+  }
+  .divIntegrandoRaza{
+    padding: 20px 30px 30px 30px;
+    border-radius: 5px;
+    background: rgba(39, 39, 39,0.98);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    .tituloDetallesRaza {
+        margin-bottom: 20px;
+        font-size: 13pt;
+        color: #E8EAE6;
+        text-align: center;
+    }
+    .divInformacionDetalles {
+        @media @Tablet{
+          display: flex;
+        } 
+        .divImgRazaDetail {
+          img {
+            border-radius: 5px;
+            border: 1.5px #212121 solid;
+            @media @phone{
+            width:100%;
+          }
+          @media @Tablet{
+            width: 300px;
+            margin-right: 30px;
+          }  
+          }
+        }
+      .divInformacionRaza{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+        @media @phone{
+          margin-top: 20px;
+          .pTituloDetalles{
+            .Textos(#AAAAAA, 13.5pt, 300);
+          }
+          .pDetalles{
+            .Textos(#E8EAE6, 13pt, 300);
+          }
+        } 
+        @media @Tablet{
+          margin-top: 0px;
+          .pTituloDetalles{
+            .Textos(#AAAAAA, 12.5pt, 300);
+          }
+          .pDetalles{
+            .Textos(#E8EAE6, 12pt, 300);
+          }
+        } 
+        
+        .pParametros{
+          @media @Tablet{
+            max-width: 200px;
+          } 
+        }
+      }
+    }
+  }
+}

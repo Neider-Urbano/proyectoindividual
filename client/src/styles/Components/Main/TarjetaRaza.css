@@ -1,0 +1,98 @@
+.divTarjetaRaza .tarjeta {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+@media (min-width: 500px) {
+  .divTarjetaRaza .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) {
+  .divTarjetaRaza .tarjeta .adelante,
+  .divTarjetaRaza .tarjeta .atras {
+    width: 75%;
+    height: 300px;
+    background: rgba(39, 39, 39, 0.95);
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+@media (min-width: 900px) {
+  .divTarjetaRaza .tarjeta .adelante,
+  .divTarjetaRaza .tarjeta .atras {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+.divTarjetaRaza .tarjeta .adelante {
+  border: 1px #1e1b1b solid;
+}
+.divTarjetaRaza .tarjeta .adelante img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 500px) {
+  .divTarjetaRaza .tarjeta .adelante .divNameRaza {
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 16px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 5px;
+    letter-spacing: 0.5px;
+    right: 0;
+    left: 0;
+  }
+}
+@media (min-width: 900px) {
+  .divTarjetaRaza .tarjeta .adelante .divNameRaza {
+    color: #fafafa;
+    font-size: 12.5pt;
+    font-weight: 500;
+    height: 55px;
+  }
+}
+.divTarjetaRaza .tarjeta .atras {
+  position: absolute;
+  padding: 20px;
+  transform: rotateY(180deg);
+  background: #e9a837;
+  border: 0.5px #a16909 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divTarjetaRaza .tarjeta .atras .pDetalles {
+  text-align: center;
+  color: #212121;
+  font-size: 12.3pt;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.divTarjetaRaza .tarjeta .atras div p {
+  color: #212121;
+  font-size: 11.5pt;
+}
+.divTarjetaRaza .tarjeta .atras div span {
+  font-weight: 600;
+}
+.divTarjetaRaza .tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+}

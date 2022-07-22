@@ -1,0 +1,64 @@
+@media (min-width: 500px) {
+  .divMenuPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 900px) {
+  .divMenuPrincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.divMenuPrincipal .opcionMenuPrincipal {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 500px) {
+  .divMenuPrincipal .opcionMenuPrincipal {
+    margin: 7px 0px;
+    color: #AAAAAA;
+    font-size: 16pt;
+    font-weight: 400;
+  }
+}
+@media (min-width: 900px) {
+  .divMenuPrincipal .opcionMenuPrincipal {
+    margin: 0px;
+    margin-right: 25px;
+    color: #AAAAAA;
+    font-size: 13.4pt;
+    font-weight: 400;
+  }
+}
+.divMenuPrincipal .active {
+  color: #E8EAE6;
+}
+.divMenuPrincipal .LinkRouter {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .divMenuPrincipal .LinkRouter {
+    margin: 0px;
+  }
+}
+.divMenuPrincipal .LinkRouter .iconoMenuPrincipal {
+  margin-top: 3px;
+  margin-right: 4px;
+}
+@media (min-width: 500px) {
+  .divMenuPrincipal .LinkRouter .iconoMenuPrincipal {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media (min-width: 900px) {
+  .divMenuPrincipal .LinkRouter .iconoMenuPrincipal {
+    width: 19.5px;
+    height: 19.5px;
+  }
+}

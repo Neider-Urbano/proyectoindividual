@@ -1,0 +1,78 @@
+@media (min-width: 500px) {
+  .divCuentaUsuario {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario .divOpcionesCuentaUser {
+    margin-right: 7px;
+  }
+}
+.divCuentaUsuario .divOpcionesCuentaUser .pUserName {
+  color: #e0e0e0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 500px) {
+  .divCuentaUsuario .divOpcionesCuentaUser .pUserName {
+    font-size: 14.5pt;
+  }
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario .divOpcionesCuentaUser .pUserName {
+    font-size: 12.6pt;
+  }
+}
+.divCuentaUsuario .divOpcionesCuentaUser .pCerrarSesion {
+  color: rgba(254, 188, 72, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 500px) {
+  .divCuentaUsuario .divOpcionesCuentaUser .pCerrarSesion {
+    font-size: 14.5pt;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario .divOpcionesCuentaUser .pCerrarSesion {
+    text-align: right;
+    margin-top: -2px;
+    font-size: 12pt;
+  }
+}
+.divCuentaUsuario .divOpcionesCuentaUser .pCerrarSesion:hover {
+  color: rgba(254, 188, 72, 0.95);
+}
+.divCuentaUsuario .divEditar {
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario .divEditar {
+    margin-right: 7px;
+  }
+}
+.divCuentaUsuario .divEditar img {
+  width: 20px;
+}
+@media (min-width: 500px) {
+  .divCuentaUsuario .divImgLogoUser img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 900px) {
+  .divCuentaUsuario .divImgLogoUser img {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,31 @@
+.divSinInternet {
+  padding: 30px 40px;
+  border-radius: 5px;
+  background: rgba(39, 39, 39, 0.93);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.divSinInternet img {
+  width: 100px;
+  margin-right: 20px;
+}
+.divSinInternet div {
+  width: 200px;
+}
+.divSinInternet div h1 {
+  color: #E8EAE6;
+  font-size: 13pt;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.divSinInternet div p {
+  text-align: center;
+  color: #E8EAE6;
+  font-size: 13pt;
+  font-weight: 300;
+}

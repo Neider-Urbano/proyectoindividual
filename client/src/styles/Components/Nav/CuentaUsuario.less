@@ -1,0 +1,70 @@
+@import "../../globales/variables.less";
+
+.divCuentaUsuario{
+    @media @phone{
+        display: flex;
+        align-items:center;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    @media @Tablet{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-top: 0px;
+    }
+    .divOpcionesCuentaUser{
+        @media @Tablet{
+            margin-right: 7px;
+        }
+        .pUserName{   
+            @media @phone{
+                font-size: 14.5pt;
+            }
+            @media @Tablet{
+                font-size: 12.6pt;
+            }
+            color: #e0e0e0;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.4);
+        }
+        .pCerrarSesion{
+            @media @phone{
+                font-size: 14.5pt;
+                text-align: center;
+            }
+            @media @Tablet{
+                text-align: right;
+                margin-top: -2px;
+                font-size: 12pt;
+            }
+            color: rgba(254, 188, 72,0.75);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.4);
+            &:hover{
+                color: rgba(254, 188, 72,0.95);
+            }
+        }
+    }
+    .divEditar{
+        cursor: pointer;
+        @media @Tablet{
+            margin-right: 7px;
+        }
+        img{
+            width: 20px;
+        }
+    }
+    .divImgLogoUser{
+        @media @phone{
+            img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+        @media @Tablet{ 
+            img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.divCrearRaza{
+    background-image: url("../../../images/fondos/crearRaza.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    @media @phone{
+        position: absolute;
+        top: 10.5vh;
+        .WidthHeigth(100%, auto);
+        padding: 25px;
+        max-height: 585px;
+        overflow-y: auto;
+    }
+    @media @Tablet{
+        max-height: none;
+        padding: 30px;
+        .flex(column, center, none);
+        .WidthHeigth(100%, 100%);
+        position: relative;
+        top: 0;
+    }
+    .divAgrupandoRaza{
+        @media @phone{
+            border-radius: 5px;
+            padding: 30px 40px;
+            background: rgba(39, 39, 39,0.98);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+        }
+        @media @Tablet{
+            padding: 30px 40px;
+        }
+        .pTituloFormularioCrearRaza{
+            margin-bottom: 20px;
+            .Textos(#E8EAE6, 13pt, 300);
+            text-align: center;
+            @media @phone{
+                .Textos(#E8EAE6, 14pt, 300);
+            }
+            @media @Tablet{
+                .Textos(#E8EAE6, 13pt, 300);
+            }
+        }
+        .formCrearRaza{
+            display: flex;
+            align-items:center;
+            @media @phone{
+                flex-direction: column-reverse;
+            }
+            @media @Tablet{
+                flex-direction: row;
+                margin-top: 30px;
+            }
+            .divIconoCrearRaza{
+                @media @phone{
+                    margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(2 , 1fr);
+                    grid-gap: 15px;
+                    img{
+                        width: 100%;
+                        height: 110px;
+                        border-radius: 3px;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    }
+                }
+                @media @Tablet{
+                    margin-top: 0px;
+                    margin-right: 40px;
+                    img{
+                        width: 150px;
+                    }
+                }
+                .pSelectImgRaza{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    margin: 0px 0px 4px 10px;
+                    color: #aaaaaa;
+                    font-weight: 400;
+                    @media @phone{                        
+                        font-size: 13pt;
+                    }
+                    @media @Tablet{                         
+                        font-size: 12.2pt;
+                    }
+                }
+                .divInputCrear{
+                    display: flex;
+                    padding: 5px 20px;
+                    background: #e9a837;
+                    border: 1px #b0740b solid;
+                    border-radius:4px;
+                    justify-content: center;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    &:hover{
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    }
+                    @media @Tablet{
+                        width: 100%;
+                    }
+                    .inputCrearRaza{
+                        outline: none;
+                        background: none;
+                        border: none;
+                        .Textos(#272727, 12.6pt, 600);
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .error{
+        box-shadow: rgba(217, 16, 49, 0.2) 0px 12px 28px 0px, rgba(240, 32, 67, 0.1) 0px 2px 4px 0px, rgba(230, 15, 83, 0.05) 0px 0px 0px 1px inset !important;
+    }
+}

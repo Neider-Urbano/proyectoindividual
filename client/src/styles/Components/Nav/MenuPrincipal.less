@@ -1,0 +1,45 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.divMenuPrincipal{
+    @media @phone{
+        .flex(column, center);
+    }
+    @media @Tablet{
+        .flex(row, center);
+    }
+    .opcionMenuPrincipal{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0,0.4);
+        @media @phone{
+            margin: 7px 0px;
+            .Textos(#AAAAAA, 16pt,400);
+        }
+        @media @Tablet{
+            margin: 0px;
+            margin-right: 25px;
+            .Textos(#AAAAAA, 13.4pt,400);
+        }
+    }
+    .active{
+        color: #E8EAE6;
+    }
+    .LinkRouter{
+        @media @Tablet{
+            margin: 0px;
+        }
+       display: flex; 
+       align-items: center;
+        .iconoMenuPrincipal{
+            margin-top: 3px;
+            margin-right: 4px;
+            @media @phone{
+                width: 26px;
+                height: 26px;
+            }
+            @media @Tablet{
+                width: 19.5px;
+                height: 19.5px;
+            }
+        }
+    }
+}

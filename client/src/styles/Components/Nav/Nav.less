@@ -1,0 +1,67 @@
+@import "../../globales/mixings.less";
+@import "../../globales/variables.less";
+
+.navPrincipal{
+    background: rgba(53, 66, 89,1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: height 1s ease;
+    z-index: 2;
+    @media @phone{
+        padding-top: 20px;
+        .WidthHeigth(100%,10.5vh);
+        .flex(column, center, none);
+        position: absolute;
+        overflow: hidden;
+    }
+    @media @Tablet{
+        .WidthHeigth(100%,60px);
+        .flex(row,center,space-between);
+        padding: 5px 180px;
+        position: relative;
+    }
+    .pKiraMax{
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 2px black;
+        @media @phone{
+            height: 60px;
+            .Textos(#FEBC48,17pt, 600);
+        }
+        @media @Tablet{
+            height: auto;
+            .Textos(#FEBC48,13.5pt, 600);
+        }
+    }
+    .phoneIconMenu, .phoneIconMenuCerrar{
+        background-size: cover;
+        position: absolute;
+        background-position: center;
+        right: 35px;
+        cursor: pointer;
+        @media @Tablet{
+            display: none;
+        }
+    }
+    .phoneIconMenu{
+        @media @phone{
+            background-image: url("../../../images/icons/menu.png");
+            transition: background-image 0.5s ease;
+            width: 25px;
+            height: 30px;
+            top: 20px;
+        }
+    }
+    .phoneIconMenuCerrar{
+        @media @phone{
+            background-image: url("../../../images/icons/cerrarMenu.png");
+            width: 28px;
+            height: 26px;
+            bottom: 30px;
+            transition: background-image 0.5s ease;
+        }
+    }
+}
+.navPrincipalActivo{
+    height: 60vh;
+    transition: height 1s ease;
+    .flex(column,center,center);
+}

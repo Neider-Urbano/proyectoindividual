@@ -1,0 +1,18 @@
+@import "../globales/variables.less";
+
+.divLayoutPublic{
+    width: 100%;
+    height: 100vh;
+    transition: height 2s ease;
+    overflow: hidden;
+    .main{
+        @media @phone{
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        @media @Pc{
+            height: 91vh;
+        }
+    }
+}

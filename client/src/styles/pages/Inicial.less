@@ -1,0 +1,92 @@
+@import "../globales/variables.less";
+@import "../globales/mixings.less";
+
+.divInicial{
+    .WidthHeigth();
+    min-height: 500px;
+    overflow: hidden;
+    background-image: url("../../images/fondos/happy-adorable-dog-eating-bone.jpg");
+    background-size: cover;
+    background-position: center;
+    .sectionInformacionInicial{
+        height: 100%;
+        @media @phone{
+            .flex(row, center, center);
+        }
+        @media @Tablet{
+            .flex(row, center, flex-start);
+            margin-left: 100px;
+        }
+        .divCrearUserInicial{
+            padding: 25px;
+            border-radius: 5px;
+            background: rgba(250, 250, 250,0.95);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 1px #AAAAAA solid;
+            @media @phone{
+                .flex();
+            }
+            @media @Tablet{
+                .flex(column, center, center);
+            }
+            .divIconoInicial{
+                @media @phone{
+                    .flex();
+                }
+                .iconoiInicial{
+                    .WidthHeigth(190px, 100%)
+                }
+            }
+            .divFormularioInicial{
+                display: flex;
+                flex-direction: column;
+                .h1CrearUser{
+                    margin-top: 20px;
+                    .Textos(#1c1919,12.8pt,500);
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .inputUserName{
+                    outline: none;
+                    padding: 0px 10px;
+                    height: 36px;
+                    font-size: 12.5pt;
+                    color: #393E46;
+                    .Border(1px, rgba(198, 198, 198,0.5), 5px);
+                    width: 230px;
+                    &:focus{
+                        box-shadow: rgba(44, 61, 244, 0.313) 0px 2px 8px 0px;
+                    }
+                }
+                .pErrorValidacion{
+                    color: red;
+                    width: 100%;
+                    padding-left: 10px;
+                    font-size: 10.5pt;
+                    margin-top: 5px;
+                }
+                .divBotonIngresar{
+                    margin-top: 15px;
+                    background: #FEBC48;
+                    border-radius: 7px;
+                    text-align: center;
+                    padding: 0px 20px;
+                    height: 36px;
+                    border: 1px #b0740b solid;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    .botonIngresar{
+                        background: none;
+                        border:none;
+                        margin-top: 5px;
+                        color: #aaaa;
+                        cursor: pointer;
+                        .Textos(#1c1919,13pt,500);
+                        &:hover{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

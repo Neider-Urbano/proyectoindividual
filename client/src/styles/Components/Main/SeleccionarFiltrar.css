@@ -1,0 +1,28 @@
+.divSeleccionarFiltrar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}
+.divSeleccionarFiltrar .selectTemRazas {
+  width: 50%;
+  outline: none;
+  background: #E8EAE6;
+  color: #555555;
+  border: none;
+  border: 0.5px #9D9D9D solid;
+  border-radius: 3px;
+  height: 30px;
+  font-size: 11.7pt;
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .divSeleccionarFiltrar .selectTemRazas {
+    margin: 0px 15px 0px 0px;
+    padding: 5px 7px;
+  }
+}
+@media (min-width: 900px) {
+  .divSeleccionarFiltrar .selectTemRazas {
+    padding-right: 20px;
+  }
+}
