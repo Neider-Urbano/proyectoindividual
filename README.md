@@ -39,7 +39,7 @@ Una aplicación en la cual se podra ver distintas razas de perro junto con infor
 - Mocha
 - Jest
 
-### Screen Shot
+## Screen Shot
 
 <div>
     <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/proyecto2.png" alt="screenshot0"/>
