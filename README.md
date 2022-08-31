@@ -191,3 +191,14 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] Al menos tener un componente del frontend con sus tests respectivos
 - [ ] Al menos tener una ruta del backend con sus tests respectivos
 - [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
+
+### Screen Shot
+
+<div>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot1"/>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot2"/>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot3"/>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot4"/>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot5"/>
+    <img src="./src/images/fondos/screnshot1.png" alt="screenshot6"/>
+</div>
