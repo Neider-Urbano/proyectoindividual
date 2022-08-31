@@ -195,10 +195,11 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 ### Screen Shot
 
 <div>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot1.png" alt="screenshot1"/>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot2.png" alt="screenshot2"/>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot3.png" alt="screenshot3"/>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot4.png" alt="screenshot4"/>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot5.png" alt="screenshot5"/>
-    <img src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot6.png" alt="screenshot6"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/proyecto2.png" alt="screenshot0"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot1.png" alt="screenshot1"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot2.png" alt="screenshot2"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot3.png" alt="screenshot3"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot4.png" alt="screenshot4"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot5.png" alt="screenshot5"/>
+    <img style="width:270px" src="https://raw.githubusercontent.com/Neider-Urbano/proyectoindividual/main/client/src/images/fondos/screnshot6.png" alt="screenshot6"/>
 </div>
